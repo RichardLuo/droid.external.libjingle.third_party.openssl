@@ -655,10 +655,6 @@ LOCAL_SRC_FILES := \
 		openssl/crypto/whrlpool/wp_block.c \
 
 
-ifneq ($(TARGET_SIMULATOR),true)
-		LOCAL_SRC_FILES += openssl/crypto/armcap.c
-endif
-
 LOCAL_C_INCLUDES := \
 	$(path_openssl) \
 	$(path_openssl)/crypto \
